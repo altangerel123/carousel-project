@@ -67,8 +67,11 @@ export default function Carousel() {
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mt-[50px] pt-[50px]"
       >
-        {posts.map((index) => (
-          <SwiperSlide className="w-[250px] h-[800px] rounded-3xl  mt-[50px] border-[1px]">
+        {posts.map((index, key) => (
+          <SwiperSlide
+            key={key}
+            className="w-[250px] h-[800px] rounded-3xl  mt-[50px] border-[1px]"
+          >
             <div className="p-5 bg-white rounded-t-3xl">
               <div className="flex gap-2 ">
                 <img
@@ -81,8 +84,8 @@ export default function Carousel() {
                 </div>
               </div>
               <p>
-                Та бүхэндээ ирж буй XVII жарны "Элдэв эрдэнэт" хэмээгч модон
-                могой жилийн сар шинийн мэндийг өргөн дэвшүүлье!
+                Та бүхэндээ ирж буй XVII жарны &quot;Элдэв эрдэнэт&quot; хэмээгч
+                модон могой жилийн сар шинийн мэндийг өргөн дэвшүүлье!
               </p>
             </div>
             <img className="w-full h-[200px]" src={index.image} />
