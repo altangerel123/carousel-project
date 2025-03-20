@@ -28,8 +28,8 @@ export default function Carousel() {
         effect={"coverflow"}
         slidesPerView={1}
         coverflowEffect={{
-          rotate: 35,
-          stretch: 0,
+          rotate: 28,
+          stretch: 41,
           depth: 0,
           modifier: 1,
           slideShadows: false,
@@ -47,9 +47,6 @@ export default function Carousel() {
           1024: {
             slidesPerView: 4,
             spaceBetween: 80,
-          },
-          1200: {
-            slidesPerView: 5,
           },
         }}
         autoplay={{
